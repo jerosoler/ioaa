@@ -6,6 +6,10 @@
 
 # IOAA - Intersection Observer API Animation
 
+## Demo
+
+[Demo](https://jerosoler.github.io/ioaa/)
+
 ## Install
 
 Simple install with npm or download dist file.
