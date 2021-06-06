@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOAA - Intersection Observer API Animation</title>
+    <meta name="description" content="Fast animation Inteserction Observer library">
+    <meta name="author" content="Jero Soler">
+    
+    <link href="style.css" rel="stylesheet">
+    <link href="animations.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism.min.css" integrity="sha256-cuvic28gVvjQIo3Q4hnRpQSNB0aMw3C+kjkR0i+hrWg=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-tomorrow.min.css" integrity="sha256-xevuwyBEb2ZYh4nDhj0g3Z/rDBnM569hg9Vq6gEw/Sg=" crossorigin="anonymous">
+</head>
+<body>
+
+    <header id="header">
+        <h1 class="ioaa" data-ioaa-animation="animateZoom" data-ioaa-repeat="true">IOAA</h1>
+        <h3>Intersection Observer API Animation</h3>
+        <small>⚡ Fast animation Inteserction Observer library</small>
+    </header>
+    <div class="wrapper">
+        <nav>
+        <a href="#install">Install</a>
+        <a href="#howtouse">How to use</a>
+        <a href="https://github.com/jerosoler/ioaa" target="_blank">Github</a>
+        </nav>
+        <blockquote class="ioaa" data-ioaa-animation="animateHeart" data-ioaa-repeat="true">Simple library to add animation on intersection</blockquote>
+        <h3 div="install">Install</h3>
+        <p>
+            Simple install with npm or download dist file. 
+        </p>
+        <h4>NPM</h4>
+        <div class="codebox" data-ioaa-animation="animateLeft">
+                <div class="preheader">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14"><g fill="none" fill-rule="evenodd" transform="translate(1 1)"><circle cx="6" cy="6" r="6" fill="#FF5F56" stroke="#E0443E" stroke-width=".5"></circle><circle cx="26" cy="6" r="6" fill="#FFBD2E" stroke="#DEA123" stroke-width=".5"></circle><circle cx="46" cy="6" r="6" fill="#27C93F" stroke="#1AAB29" stroke-width=".5"></circle></g></svg>
+                </div>
+                <pre><code class="language-bash">npm install ioaa -s</code></pre>
+        </div>
+
+        <h4>Script</h4>
+        <div class="codebox" data-ioaa-animation="animateRight" data-ioaa-repeat="true">
+                <div class="preheader">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14"><g fill="none" fill-rule="evenodd" transform="translate(1 1)"><circle cx="6" cy="6" r="6" fill="#FF5F56" stroke="#E0443E" stroke-width=".5"></circle><circle cx="26" cy="6" r="6" fill="#FFBD2E" stroke="#DEA123" stroke-width=".5"></circle><circle cx="46" cy="6" r="6" fill="#27C93F" stroke="#1AAB29" stroke-width=".5"></circle></g></svg>
+                </div>
+                <pre><code class="language-html"><xmp><script type="module">
+     import ioaa from "../dist/ioaa.min.js";
+</script></xmp></code></pre>
+        </div>
+
+
+       
+
+    <h3 id="howtouse">How to use</h3>
+    <h4>HTML</h4>
+    <div class="codebox" data-ioaa-animation="animateLeft" data-ioaa-repeat="true">
+        <div class="preheader">
+            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14"><g fill="none" fill-rule="evenodd" transform="translate(1 1)"><circle cx="6" cy="6" r="6" fill="#FF5F56" stroke="#E0443E" stroke-width=".5"></circle><circle cx="26" cy="6" r="6" fill="#FFBD2E" stroke="#DEA123" stroke-width=".5"></circle><circle cx="46" cy="6" r="6" fill="#27C93F" stroke="#1AAB29" stroke-width=".5"></circle></g></svg>
+        </div>
+        <pre><code class="language-html"><xmp><div class="ioaa" data-ioaa-animation="animateLeft" data-ioaa-repeat="true">...</div></xmp></code></pre>
+    </div>
+    <table class="ioaa" data-ioaa-animation="animateFlip" data-ioaa-repeat="true">
+        <thead>
+            <th>
+                Option
+            </th>
+            <th>
+                Default
+            </th>
+            <th>
+                Description
+            </th>
+        </thead>
+        <tr>
+            <td>
+                class
+            </td>
+            <td>
+                ioaa
+            </td>
+            <td>
+                Class Name for animation
+            </td>
+        </tr>
+        <tr>
+            <td>
+                data-ioaa-animation
+            </td>
+            <td>
+                null
+            </td>
+            <td>
+                Your class name animation
+            </td>
+        </tr>
+        <tr>
+            <td>
+                data-ioaa-repeat
+            </td>
+            <td>
+                false
+            </td>
+            <td>
+                True or False, not required
+            </td>
+        </tr>
+    </table>
+    
+    <h4>Javascript</h4>
+    <div class="codebox" data-ioaa-animation="animateRight" data-ioaa-repeat="true">
+        <div class="preheader">
+            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14"><g fill="none" fill-rule="evenodd" transform="translate(1 1)"><circle cx="6" cy="6" r="6" fill="#FF5F56" stroke="#E0443E" stroke-width=".5"></circle><circle cx="26" cy="6" r="6" fill="#FFBD2E" stroke="#DEA123" stroke-width=".5"></circle><circle cx="46" cy="6" r="6" fill="#27C93F" stroke="#1AAB29" stroke-width=".5"></circle></g></svg>
+        </div>
+        <pre><code class="language-html"><xmp><script type="module">
+        import ioaa from "../src/ioaa.js";
+        ioaa(); // Or ioaa('.YOU_CLASSNAME');  Default ClassName ioaa
+</script></xmp></code></pre>
+    </div>
+    <h4>CSS</h4>
+    <div class="codebox" data-ioaa-animation="animateLeft" data-ioaa-repeat="true">
+        <div class="preheader">
+            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14"><g fill="none" fill-rule="evenodd" transform="translate(1 1)"><circle cx="6" cy="6" r="6" fill="#FF5F56" stroke="#E0443E" stroke-width=".5"></circle><circle cx="26" cy="6" r="6" fill="#FFBD2E" stroke="#DEA123" stroke-width=".5"></circle><circle cx="46" cy="6" r="6" fill="#27C93F" stroke="#1AAB29" stroke-width=".5"></circle></g></svg>
+        </div>
+        <pre><code class="language-css"><xmp>.animateLeft {
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
+}
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}</xmp></code></pre>
+    </div>
+
+        
+
+    </div>
+
+    <footer id="footer">
+        Developed by <a href="https://twitter.com/jerosoler" target="_blank">Jero Soler</a> with <span class="ioaa" data-ioaa-animation="animateHeart" data-ioaa-repeat="true">❤</span>
+        <a href="#header">⬆</a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js" integrity="sha256-3teItwIfMuVB74Alnxw/y5HAZ2irOsCULFff3EgbtEs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-css.min.js" integrity="sha256-4ut/7XCv/zjtcNF9GlQL+Jpy3AuQlLt2ExXNtIjZ8Po=" crossorigin="anonymous"></script>
+
+    <script type="module">
+        import ioaa from "../src/ioaa.js";
+        ioaa();
+        ioaa(".codebox");
+    </script>
+
+</body>
+</html>

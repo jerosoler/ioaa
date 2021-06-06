@@ -1,0 +1,35 @@
+{
+  "name": "ioaa",
+  "version": "0.0.1",
+  "description": "Intersection Observer API Animation",
+  "main": "dist/ioaa.min.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerosoler/ioaa.git"
+  },
+  "keywords": [
+    "ioaa",
+    "IOA",
+    "intersection",
+    "observer",
+    "animation"
+  ],
+  "author": "Jero Soler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jerosoler/ioaa/issues"
+  },
+  "homepage": "https://github.com/jerosoler/ioaa#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}
